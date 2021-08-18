@@ -7,6 +7,11 @@ pipeline {
             choices: ['jordy', 'scappy','angmond'],
             description: "jordy vs scappy"
         )
+        choice(
+            name: "kakao",
+            choices: ['lion', 'prodo','angmond'],
+            description: "jordy vs scappy"
+        )
         string(
             name: "hello",
             defaultValue: "*/master",
@@ -17,6 +22,7 @@ pipeline {
             defaultValue: "*/master",
             description:"descript"
         )
+    }
     }
     stages {
         stage('Hello') {  
