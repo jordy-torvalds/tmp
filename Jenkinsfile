@@ -6,6 +6,11 @@ pipeline {
             choices: ['jordy', 'scappy','angmond'],
             description: "jordy vs scappy"
         )
+        choice(
+            name: "kakao",
+            choices: ['lion', 'prodo','angmond'],
+            description: "jordy vs scappy"
+        )
         string(
             name: "hello",
             defaultValue: "*/master",
@@ -21,6 +26,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo "Hello World ${params.niniz}"
+                echo "Hello World ${params.kakao}"
                 echo "Hello World ${params.hello}"
                 echo "Hello World ${params.hello2}"
             }
