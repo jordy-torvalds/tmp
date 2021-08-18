@@ -23,7 +23,6 @@ pipeline {
             description:"descript"
         )
     }
-    }
     stages {
         stage('Hello') {  
             steps {
