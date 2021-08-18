@@ -20,9 +20,9 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World $(niniz)'
-                echo 'Hello World $(hello)'
-                echo 'Hello World $(hello2)'
+                echo 'Hello World ${niniz}'
+                echo 'Hello World ${hello}'
+                echo 'Hello World ${hello2}'
             }
         }
     }
